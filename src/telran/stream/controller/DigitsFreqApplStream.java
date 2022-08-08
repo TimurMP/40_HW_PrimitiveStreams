@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-public class DigitsFreqAppl {
+public class DigitsFreqApplStream {
 
 //    private static Random random = new Random();
     private final static int N_NUMBERS = 1_000_000;
@@ -21,7 +21,7 @@ public class DigitsFreqAppl {
                     .sorted((e1,e2) ->Long.compare(e2.getValue(), e1.getValue()))
                     .collect(Collectors.toList()).forEach(s -> System.out.println(s.getKey() + " --> " + s.getValue()));
 
-//        for (Map.Entry<String, Long> entry : ress.entrySet()) {
+  //        for (Map.Entry<String, Long> entry : ress.entrySet()) {
 //            System.out.println(entry.getKey() + " -> " + entry.getValue());/
 //        }
 
